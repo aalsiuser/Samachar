@@ -1,5 +1,7 @@
 <template>
 <div>
+  sdkljf,hksdljhfklsjdhfksjdhfkljsdhfkls
+  <test></test>
   <v-layout>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
@@ -26,7 +28,12 @@
 </template>
 
 <script>
-export default {};
+import Test from "./test.vue";
+export default {
+  components: {
+    Test
+  }
+};
 </script>
 
 <style>

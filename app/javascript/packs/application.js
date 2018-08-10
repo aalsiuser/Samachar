@@ -4,6 +4,8 @@ import router from "../router.js";
 import axios from "axios";
 import BootstrapVue from "bootstrap-vue";
 import Vuetify from "vuetify";
+import infiniteScroll from "vue-infinite-scroll";
+Vue.use(infiniteScroll);
 Vue.use(BootstrapVue);
 
 Vue.use(Vuetify, {

@@ -27,7 +27,7 @@
         </v-list-tile>
         <v-list-tile v-for="(category,catIndex) in categories" :key="catIndex" @click="fetchNewsWithCategory(category)">
           <v-list-tile-action>
-            <v-icon>home</v-icon>
+            <v-icon>{{category}}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>{{category}}</v-list-tile-title>

@@ -29,11 +29,16 @@
 
 <script>
 import axios from "axios";
+import infiniteScroll from "vue-infinite-scroll";
 export default {
+  components: {
+    infiniteScroll
+  },
   data() {
     return {
       articles: [],
-      source: null
+      source: null,
+      busy: false
     };
   },
   methods: {
@@ -52,8 +57,7 @@ export default {
       );
       this.articles = data.articles;
     }
-  },
-  mounted() {}
+  }
 };
 </script>
 
